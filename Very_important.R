@@ -13,3 +13,8 @@ n <- 60
 qual_col_pals = brewer.pal.info[brewer.pal.info$category == 'qual',]
 col_vector = unlist(mapply(brewer.pal, qual_col_pals$maxcolors, rownames(qual_col_pals)))
 pie(rep(1,n), col=sample(col_vector, n))
+
+#RandomForest Plot importante variables
+imp <- cbind.data.frame(Feature=rownames(rf$importance),rf$importance)
+g <- ggplot(imp, aes(x=reorder(Feature, MeanDecreaseGini), y=MeanDecreaseGini))
+g + geom_bar(stat = 'identity',fill=sample(col_vector, 14)) + xlab('les vaiaibles ')+ylab("L'importance")+coord_flip()
