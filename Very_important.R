@@ -21,3 +21,17 @@ g + geom_bar(stat = 'identity',fill=sample(col_vector, 14)) + xlab('les vaiaible
 
 #ggplot
 #https://www.r-graph-gallery.com/279-plotting-time-series-with-ggplot2.html
+My_data_CPT %>% 
+  ggplot(aes(as.Date(DATE),`CPT 400`)) +
+  geom_line(color=colooor[1])+
+  geom_point(color=colooor[2], size=2)  +
+  geom_smooth()+xlab("")+
+  scale_x_date(date_labels = "%d-%b",
+               date_minor_breaks = "1 day",
+               date_breaks = "2 day"
+               #limit=c(as.Date("2020-01-01"),as.Date("2020-01-10"))
+               )+
+  # ylim(0,60)+
+  theme(axis.text.x=element_text(angle=60, hjust=1))
+ggsave(paste("CPT400",".png",sep = ""),path = "images",scale =3)
+
