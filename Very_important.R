@@ -18,3 +18,6 @@ pie(rep(1,n), col=sample(col_vector, n))
 imp <- cbind.data.frame(Feature=rownames(rf$importance),rf$importance)
 g <- ggplot(imp, aes(x=reorder(Feature, MeanDecreaseGini), y=MeanDecreaseGini))
 g + geom_bar(stat = 'identity',fill=sample(col_vector, 14)) + xlab('les vaiaibles ')+ylab("L'importance")+coord_flip()
+
+#ggplot
+#https://www.r-graph-gallery.com/279-plotting-time-series-with-ggplot2.html
