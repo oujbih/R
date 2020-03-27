@@ -35,3 +35,10 @@ My_data_CPT %>%
   theme(axis.text.x=element_text(angle=60, hjust=1))
 ggsave(paste("CPT400",".png",sep = ""),path = "images",scale =3)
 
+
+##SAVE DATA IN TO XLSX AND RDA
+library(xlsx)
+save(Model_data_CPT,file="CPT_DSP.Rda")
+write.xlsx2(Model_data_CPT,"CPT_DSP.xlsx")
+
+
