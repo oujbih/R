@@ -46,5 +46,5 @@ write.xlsx2(Model_data_CPT,"CPT_DSP.xlsx")
 
 #log2(0.5)=-1 car ln(0.5)=-ln(2)
 
-
-
+#: Remove the NA observations dplyr
+na.omit()
