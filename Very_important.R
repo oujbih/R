@@ -44,4 +44,7 @@ library(xlsx)
 save(Model_data_CPT,file="CPT_DSP.Rda")
 write.xlsx2(Model_data_CPT,"CPT_DSP.xlsx")
 
+#log2(0.5)=-1 car ln(0.5)=-ln(2)
+
+
 
