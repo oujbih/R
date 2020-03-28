@@ -48,3 +48,5 @@ write.xlsx2(Model_data_CPT,"CPT_DSP.xlsx")
 
 #: Remove the NA observations dplyr
 na.omit()
+#TODO 
+#creat cv like is one https://www.seas.upenn.edu/~xuanyizh/
