@@ -59,6 +59,7 @@ install.packages("xgboost", repos=c("http://dmlc.ml/drat/", getOption("repos")),
 #load data 
 data(Boston, package = "MASS")
 
-
-
+#RandomForst
+DATA.test <- rbind(DATA.train[1, ] , DATA.test)
+DATA.test <- DATA.test[-1,]
 
