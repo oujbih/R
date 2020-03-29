@@ -1,6 +1,8 @@
 
 #Elegant way to report missing values in a data.frame
 apply(is.na(Janvier_DATA),2,sum)
+colSums(is.na(Boston))
+str(data)
 #RandomForest 
 DATA.train <- DATA.train %>% mutate_if(is.character, as.factor)
 
@@ -50,3 +52,13 @@ write.xlsx2(Model_data_CPT,"CPT_DSP.xlsx")
 na.omit()
 #TODO 
 #creat cv like is one https://www.seas.upenn.edu/~xuanyizh/
+#Install multiple packages 
+install.packages(c("caret", "glmnet", "randomForest", "ggplot2", "RhpcBLASctl"))
+install.packages("xgboost", repos=c("http://dmlc.ml/drat/", getOption("repos")), type="source")
+
+#load data 
+data(Boston, package = "MASS")
+
+
+
+
