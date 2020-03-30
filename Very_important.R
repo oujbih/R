@@ -62,4 +62,5 @@ data(Boston, package = "MASS")
 #RandomForst
 DATA.test <- rbind(DATA.train[1, ] , DATA.test)
 DATA.test <- DATA.test[-1,]
-
+#Opposite of %in%
+'%ni%' <- Negate('%in%')
