@@ -62,6 +62,7 @@ data(Boston, package = "MASS")
 #RandomForst
 DATA.test <- rbind(DATA.train[1, ] , DATA.test)
 DATA.test <- DATA.test[-1,]
+DATA.testmp_regression$Qualité.y <- factor(DATA.testmp_regression$Qualité.y, levels = levels(DATA.traintmp$Qualité.y))
 #Opposite of %in%
 '%ni%' <- Negate('%in%')
 
