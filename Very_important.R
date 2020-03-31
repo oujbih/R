@@ -69,15 +69,10 @@ DATA.test <- DATA.test[-1,]
 #R^2 = ESS/TSS = 1 - RSS/TSS.
 
 Moyenne <- mean(DATA.traintmp_regression$X40µm)
-df_moyenne <- rep(Moyenne,nrow(DATA.traintmp_regression))
-R <- 1 - (sum(DATA.traintmp_regression$X40µm-pred.train)^2)/(sum(DATA.traintmp_regression$X40µm-df_moyenne)^2)
-
-df <- data.frame(Date=Model_data$DATE[index_train],Train=DATA.traintmp_regression$X40µm,Predict =pred.train)
-df <- as_tibble(df)
-ggplot(df,aes(Date,Train))+
-  geom_point(color=col_vector[5])+
-  geom_point(aes(y=Predict),color=col_vector[10])+
-  geom_hline(yintercept=Moyenne)
+mutate(diff = Train-Predict,
+                          diff2= Train-Moyenne,
+                          a = diff^2,
+                          b = diff2^2)
 
 
 
