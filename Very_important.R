@@ -78,7 +78,9 @@ mutate(diff = Train-Predict,
 
 #Include other file in r 
 source("name.R")
-
+source("Function.R",encoding = "UTF-8")
+unlink(".RData") 
+ 
 
 
 
