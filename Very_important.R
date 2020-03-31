@@ -81,6 +81,8 @@ source("name.R")
 source("Function.R",encoding = "UTF-8")
 unlink(".RData") 
  
+#add 1 day in R
+as.difftime(1, units="days")
 
 
 
