@@ -76,8 +76,8 @@ mutate(diff = Train-Predict,
                           b = diff2^2)
 
 
-
-
+#Include other file in r 
+source("name.R")
 
 
 
