@@ -84,7 +84,9 @@ unlink(".RData")
 #add 1 day in R
 as.difftime(1, units="days")
 
-
+#correlation 
+library(corrplot)
+corrplot::corrplot(cor)
 
 
 
