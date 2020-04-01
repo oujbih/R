@@ -87,6 +87,6 @@ as.difftime(1, units="days")
 #correlation 
 library(corrplot)
 corrplot::corrplot(cor)
-
+corrplot::corrplot(cor,method = "number")
 
 
