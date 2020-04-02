@@ -89,4 +89,5 @@ library(corrplot)
 corrplot::corrplot(cor)
 corrplot::corrplot(cor,method = "number")
 
-
+#remplace Na with lag 
+ zoo::na.locf(m)
