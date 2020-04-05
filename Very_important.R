@@ -100,3 +100,7 @@ corrplot::corrplot(cor,method = "number")
 ##decision tree
 
 ##Dashboard
+
+# impute missing data
+library(mice)
+
