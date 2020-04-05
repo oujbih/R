@@ -39,6 +39,8 @@ My_data_CPT %>%
                )+
   # ylim(0,60)+
   theme(axis.text.x=element_text(angle=60, hjust=1))
+#geom_text angle 
+geom_text(nudge_y = 1,angle=60)
 ggsave(paste("CPT400",".png",sep = ""),path = "images",scale =3)
 ggsave(paste("suivi des perforance des cyclone",".png",sep = ""),path = "images",width =11,height = 6)
 
