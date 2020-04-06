@@ -102,5 +102,5 @@ corrplot::corrplot(cor,method = "number")
 ##Dashboard
 
 # impute missing data
-library(mice)
+library(mice) # not tested 
 
