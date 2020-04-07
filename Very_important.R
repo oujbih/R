@@ -100,7 +100,7 @@ corrplot::corrplot(cor,method = "number")
 ##decision tree
 
 ##Dashboard ------------
-
+https://github.com/puikinsh/adminpro
 # impute missing data
 library(mice) # not tested 
 
