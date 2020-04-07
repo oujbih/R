@@ -101,6 +101,7 @@ corrplot::corrplot(cor,method = "number")
 
 ##Dashboard ------------
 https://github.com/puikinsh/adminpro
+https://themeselection.com/bootstrap-4-admin-template-github/
 # impute missing data
 library(mice) # not tested 
 
