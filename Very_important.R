@@ -104,4 +104,4 @@ corrplot::corrplot(cor,method = "number")
 # impute missing data
 library(mice) # not tested 
 
-#overfitting
+#overfitting #not fond 
