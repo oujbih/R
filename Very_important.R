@@ -3,6 +3,8 @@
 apply(is.na(Janvier_DATA),2,sum)
 colSums(is.na(Boston))
 str(data)
+#library path
+.libPaths() 
 #RandomForest 
 DATA.train <- DATA.train %>% mutate_if(is.character, as.factor)
 # column name
