@@ -109,3 +109,10 @@ https://themeselection.com/bootstrap-4-admin-template-github/
 library(mice) # not tested 
 
 #overfitting #not fond 
+
+#R and all package version 
+print(paste("R", getRversion()))
+print("-------------")
+for (package_name in sort(loadedNamespaces())) {
+    print(paste(package_name, packageVersion(package_name)))
+}
