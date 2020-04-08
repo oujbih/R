@@ -4,6 +4,8 @@ apply(is.na(Janvier_DATA),2,sum)
 colSums(is.na(Boston))
 str(data)
 dplyr::mutate_all
+####### realy important 
+mutate(!!new_col_name :=blabla ) #you can use also mutate_
 #library path
 .libPaths() 
 #RandomForest 
