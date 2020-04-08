@@ -3,6 +3,7 @@
 apply(is.na(Janvier_DATA),2,sum)
 colSums(is.na(Boston))
 str(data)
+dplyr::mutate_all
 #library path
 .libPaths() 
 #RandomForest 
