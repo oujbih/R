@@ -10,3 +10,4 @@ dendextend
 tableHTML
 shinySignals
 dplyr
+scales
