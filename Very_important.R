@@ -107,6 +107,7 @@ corrplot::corrplot(cor,method = "number")
 ##Dashboard ------------
 https://github.com/puikinsh/adminpro
 https://themeselection.com/bootstrap-4-admin-template-github/
+https://github.com/Appsilon/semantic.dashboard
 argonDash #https://rinterface.github.io/argonDash/
 #TODO 
 #graphique visualition 
