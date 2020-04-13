@@ -110,6 +110,9 @@ https://themeselection.com/bootstrap-4-admin-template-github/
 https://github.com/Appsilon/semantic.dashboard
 https://github.com/yanyachen/MLmetrics
 argonDash #https://rinterface.github.io/argonDash/
+
+
+chooseSliderSkin("Nice") #cool
 #TODO 
 #graphique visualition 
 #model test 
