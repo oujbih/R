@@ -11,3 +11,4 @@ tableHTML
 shinySignals
 dplyr
 scales
+library(shinyBS) #zoom panel >> bsModal
