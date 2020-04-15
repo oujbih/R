@@ -12,3 +12,4 @@ shinySignals
 dplyr
 scales
 library(shinyBS) #zoom panel >> bsModal
+neuralnet #2019
