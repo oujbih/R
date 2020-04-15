@@ -1,6 +1,6 @@
 
 
-#select multi input 
+#select multiple inputs 
 library(shinyWidgets)
 pickerInput(width = "95%",
                 inputId = "myPicker", 
