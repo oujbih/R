@@ -12,6 +12,7 @@ mutate(!!new_col_name :=blabla ) #you can use also mutate_
 DATA.train <- DATA.train %>% mutate_if(is.character, as.factor)
 # column name
 colnames(dataframe)
+names(df)[names(df) == 'old.var.name'] <- 'new.var.name'
 is.finite(c(1, NA, Inf, NaN, -Inf))
 #[1]  TRUE FALSE FALSE FALSE FALSE
 
