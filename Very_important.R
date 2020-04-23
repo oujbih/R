@@ -133,5 +133,11 @@ for (package_name in sort(loadedNamespaces())) {
 }
 
 #https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1550.pdf for frequency problem
-
+#neuralnet
+DATA.traintmp_regression %>% 
+  select_if(is.numeric) %>% 
+  colnames()
+maxs_train <- apply( DATA.traintmp_regression, 2, max) 
+mins_train <- apply( DATA.traintmp_regression, 2, min)
+scaled_train <- as.data.frame(scale(DATA.traintmp_regression, center = mins_train, scale = maxs_train - mins_train))
 
