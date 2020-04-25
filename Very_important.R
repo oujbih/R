@@ -141,3 +141,8 @@ maxs_train <- apply( DATA.traintmp_regression, 2, max)
 mins_train <- apply( DATA.traintmp_regression, 2, min)
 scaled_train <- as.data.frame(scale(DATA.traintmp_regression, center = mins_train, scale = maxs_train - mins_train))
 
+#Run python in R -https://rstudio.github.io/reticulate/articles/calling_python.html
+library(reticulate)
+py_run_file("name.py")
+source_python("name.py")
+
