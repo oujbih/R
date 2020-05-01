@@ -145,4 +145,6 @@ scaled_train <- as.data.frame(scale(DATA.traintmp_regression, center = mins_trai
 library(reticulate)
 py_run_file("name.py")
 source_python("name.py")
-
+#remove all variables from current working environment
+rm(list=ls()) #all
+rm(list=lsf.str()) #only function
