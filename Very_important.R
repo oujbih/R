@@ -148,3 +148,8 @@ source_python("name.py")
 #remove all variables from current working environment
 rm(list=ls()) #all
 rm(list=lsf.str()) #only function
+
+
+#duplicated
+duplicated
+nrow(My_data_CPT_HG[duplicated(My_data_CPT_HG$X40µm),])
