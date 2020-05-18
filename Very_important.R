@@ -154,3 +154,14 @@ rm(list=lsf.str()) #only function
 #duplicated
 duplicated
 nrow(My_data_CPT_HG[duplicated(My_data_CPT_HG$X40µm),])
+
+#Remove corelleted variable 
+library(Hmisc)
+x=rcorr(as.matrix(train[,3:80]))
+xx =cor(dataframe)
+xx[upper.tri(xx)] <- 0
+diag(xx) <- 0
+data.new <- train_na[,!apply(xx,2,function(x) any(abs(x) >= 0.8))]
+dim(data.new)
+
+
