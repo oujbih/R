@@ -163,5 +163,8 @@ xx[upper.tri(xx)] <- 0
 diag(xx) <- 0
 data.new <- train_na[,!apply(xx,2,function(x) any(abs(x) >= 0.8))]
 dim(data.new)
-
+#add datetime 
+x = Sys.time()
+library(lubridate)
+x + hours(3) 
 
