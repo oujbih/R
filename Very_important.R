@@ -166,5 +166,12 @@ dim(data.new)
 #add datetime 
 x = Sys.time()
 library(lubridate)
-x + hours(3) 
+x + hours(3)
+#benchmarkme
+library("microbenchmark")
+microbenchmark(name_function , times = 1)
 
+  
+                             
+                             
+                             
