@@ -16,3 +16,26 @@ graph <- lapply(names(factor),
 	ggplot(factor, aes(get(x))) +
 		geom_bar() +
 		theme(axis.text.x = element_text(angle = 90)))
+
+
+#correlation graph 
+library(GGally)
+ggcorr(Train[, -ncol(Train)],
+       label = TRUE,
+       hjust = 0.9, # <---- very important
+       label_alpha = TRUE)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
