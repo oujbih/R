@@ -9,3 +9,10 @@
                      labels = seq(0.1,1,0.1) )+
   # theme_bw() +
   theme(axis.text.x=element_text(size=rel(1.5), angle=90))
+
+# Create graph for each column
+graph <- lapply(names(factor),
+    function(x) 
+	ggplot(factor, aes(get(x))) +
+		geom_bar() +
+		theme(axis.text.x = element_text(angle = 90)))
