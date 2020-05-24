@@ -171,7 +171,6 @@ x + hours(3)
 library("microbenchmark")
 microbenchmark(name_function , times = 1)
 
-  
-                             
-                             
+#KNN 
+attributes(pred_knn_test)$prob
                              
