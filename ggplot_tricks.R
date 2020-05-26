@@ -37,6 +37,10 @@ legend(x = "bottomright",
        fill = 1:m,
        cex = 0.75)
 
+#graphiques-interactifs
+#library(ggiraph) not working 
+library(plotly)
+ggplotly(p)
 
 
 
