@@ -1,1 +1,8 @@
 
+#GLM 
+https://en.wikipedia.org/wiki/Gradient_boosting
+#TODO :
+  1-recreate gbm function 
+  2-testing and comparing the to methode 
+
+
