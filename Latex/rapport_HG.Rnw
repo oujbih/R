@@ -1,0 +1,43 @@
+
+%------------------------Begin Code Latex -------------------------------
+\documentclass[a4paper, 11pt]{article}
+\input{Latex/preamble}
+% premiere page
+\newcommand{\Annee}{2019}
+\newcommand{\Mois}{Février}
+\newcommand{\version}{01/01/2019}
+% deuxieme page 
+\newcommand{\variation}{jan.2018/jan. 2019}
+\newcommand{\AfinP}{jan.18}
+\newcommand{\AfinD}{jan.19}
+\begin{document}
+%-------------------------------------page de Grade--------------------------------------
+% \input{Latex/Page_de_garde}
+
+%-------------------------------------Fin page  Grade--------------------------------------
+
+\newpage
+%-------------------------------------deuxieme page  --------------------------------------
+<<options0, echo=FALSE>>=
+print(getwd())
+@
+
+\Sexpr{
+setwd(dirname(getwd()))
+
+df_result %>%
+  kable() %>%
+  kable_styling()
+}
+
+
+<<options, echo=FALSE>>=
+print(c)
+
+  
+@
+
+some Text 
+  
+
+\end{document}
