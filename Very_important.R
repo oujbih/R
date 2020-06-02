@@ -174,3 +174,5 @@ microbenchmark(name_function , times = 1)
 #KNN 
 attributes(pred_knn_test)$prob
                              
+#working directory 
+setwd(dirname(getwd()))
