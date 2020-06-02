@@ -24,3 +24,36 @@ ui <- shinyUI(fluidPage(
 
 shinyApp(ui = ui, server = server)
 
+#multi line output 
+
+htmlOutput("modelParameters") # ui
+output$modelParameters <- renderUI(
+        HTML(
+          paste(
+            c("<pre>", capture.output({ 
+                  # here
+                  # out put console
+                }), "</pre>"),
+            collapse = "<br>"
+          )
+        )
+      ) #server
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
