@@ -176,3 +176,4 @@ attributes(pred_knn_test)$prob
                              
 #working directory 
 setwd(dirname(getwd()))
+setwd('../..')                             
