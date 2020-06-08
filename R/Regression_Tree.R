@@ -39,3 +39,7 @@ hyper_grid %>%
     ) %>%
   arrange(error) %>%
   top_n(-5, wt = error)
+#plot it part
+rpart.plot(x = model_1, yesno = 1, type = 0, extra = 1,tweak = 1.2, under = T,fallen.leaves = F)
+  
+
