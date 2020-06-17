@@ -64,6 +64,11 @@ na.omit()
 #creat cv like is one https://www.seas.upenn.edu/~xuanyizh/
 #Install multiple packages 
 install.packages(c("caret", "glmnet", "randomForest", "ggplot2", "RhpcBLASctl"))
+# Install packages if missing
+list.of.packages <- c("parallel", "doParallel", "caret", "randomForest", "funModeling", "tidyverse", "GA")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+
 install.packages("xgboost", repos=c("http://dmlc.ml/drat/", getOption("repos")), type="source")
 
 #load data 
