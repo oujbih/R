@@ -1,4 +1,4 @@
-#R
+#R scripts 
 #x:(x + 49) x x+1 x+2 x+3 .... x+49  
 #Elegant way to report missing values in a data.frame
 apply(is.na(Janvier_DATA),2,sum)
