@@ -18,3 +18,4 @@ reticulate # Python in R
 #Machine learning in r 
 #https://cran.r-project.org/web/views/MachineLearning.html
 #
+profvis                  # is a tool for helping you to understand how R spends its time
