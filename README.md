@@ -1,5 +1,5 @@
 # R 
->My notes :) h
+>My notes :)
 
 ### Author
 
