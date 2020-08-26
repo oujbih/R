@@ -18,12 +18,6 @@ android odin
 #ok
 #ok
 #ok
-
-#ok
-#ok
-#ok
-#ok
-#ok
 #ok
 #ok
 #ok
