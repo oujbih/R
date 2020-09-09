@@ -4,7 +4,7 @@
 #ok
 android odin 
 #11/05/datbales
-i'm back
+sudo tcpdump -i tun0 icmp
 #ok
 #ok
 #ok
