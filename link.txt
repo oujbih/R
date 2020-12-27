@@ -1,2 +1,5 @@
 https://topepo.github.io/caret #machine learning
 https://onehack.us/t/awesome-hacking-a-collection-of-awesome-lists-for-hackers-pentesters-security-researchers/82544
+
+# Formula 
+https://thomasleeper.com/Rcourse/Tutorials/formulae.html
