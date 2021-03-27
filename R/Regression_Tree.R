@@ -19,7 +19,7 @@ for (i in 1:nrow(hyper_grid)) {
                        control = list(minsplit = minsplit, maxdepth = maxdepth))
 
 }
-
+#OUJBIH oUJBIH OUJBIH oUJBIH OUJBIH oUJBIH OUJBIH oUJBIH OUJBIH oUJBIH OUJBIH oUJBIH OUJBIH oUJBIH OUJBIH oUJBIH OUJBIH oUJBIH OUJBIH oUJBIH OUJBIH oUJBIH 
 # function to get optimal cp
 get_cp <- function(x) {
   min    <- which.min(x$cptable[, "xerror"])
