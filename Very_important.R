@@ -1,3 +1,4 @@
+list_all_brand_country[grep("^BB",list_all_brand_country)]
 #R scripts 
 #x:(x + 49) x x+1 x+2 x+3 .... x+49  
 #Elegant way to report missing values in a data.frame
